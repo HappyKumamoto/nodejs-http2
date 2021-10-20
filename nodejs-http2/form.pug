@@ -1,0 +1,68 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    title アンケート
+    style(type="text/css").
+      body{
+        background-color: AntiqueWhite;/*#FAEBD7*/
+        text-align:center
+      }
+  body
+    h3 〜只今キャンペーン準備中〜<br>情報収集にご協力お願いいたします。
+    h1 ＼気になるおみやげ・名所旧跡／<br>＼アンケート／
+    h2
+     form(method="post" action=path)
+      span お住まいの地域
+      br
+      input(type="radio" name="chiiki" value="北海道")
+      | 北海道
+      input(type="radio" name="chiiki" value="本州東日本")
+      | 本州東日本
+      input(type="radio" name="chiiki" value="本州西日本")
+      | 本州西日本
+      input(type="radio" name="chiiki" value="四国")
+      | 四国
+      input(type="radio" name="chiiki" value="九州・沖縄")
+      | 九州・沖縄
+      input(type="radio" name="chiiki" value="そのほかの地域")
+      | そのほかの地域
+      br
+      span ニックネーム(20字まで)
+      input(type="text" name="ニックネーム" maxlength="20")
+      br
+      br
+      span ◯ご希望する項目をチェックしてください(おいくつでも)
+      br
+      input(type="checkbox" name="favorite" value=firstItem)
+      | #{firstItem}
+      input(type="checkbox" name="favorite" value=secondItem)
+      | #{secondItem}
+      input(type="checkbox" name="favorite" value=thirdItem)
+      | #{thirdItem}
+      br
+      input(type="checkbox" name="favorite" value=fourthItem)
+      | #{fourthItem}
+      input(type="checkbox" name="favorite" value=fifthItem)
+      | #{fifthItem}
+      input(type="checkbox" name="favorite" value=sixthItem)
+      | #{sixthItem}
+      br
+      input(type="checkbox" name="favorite" value=seventhItem)
+      | #{seventhItem}
+      input(type="checkbox" name="favorite" value=eighthItem)
+      | #{eighthItem}
+      input(type="checkbox" name="favorite" value=ninethItem)
+      | #{ninethItem}
+      br
+      input(type="checkbox" name="favorite" value=tenthItem)
+      | #{tenthItem}
+      input(type="checkbox" name="favorite" value=eleventhItem)
+      | #{eleventhItem}
+      input(type="checkbox" name="favorite" value=twelvthItem)
+      | #{twelvthItem}
+      br
+      span その他のご要望(40字以内)
+      input(type="text" name="iken" cols="30" raws="10" maxlength="40")
+      br
+      button(type="submit" style="width:10%;font-size:30px;" ) 決定
